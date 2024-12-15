@@ -12,4 +12,8 @@ contract MyTokenTest is MyToken {
         Assert.equal(decimals(), 18, "token decimals did not match");
         Assert.equal(totalSupply(), 0, "token supply should be zero");
     }
+
+    function mint(address to, uint64 value) external {
+        _mint(to,value);
+    }
 }
