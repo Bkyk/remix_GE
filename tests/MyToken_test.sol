@@ -17,6 +17,7 @@ contract MyTokenTest is MyToken {
         _mint(to,value);
     }
 
-    function burn(unit256 value) external {
+    function burn(uint256 value) external {
         _burn(msg.sender, value);
+    }
 }
